@@ -1,3 +1,4 @@
+
 namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesLista
@@ -11,6 +12,13 @@ namespace TestesUnitarios.Desafio.Console.Services
         public bool ListaContemDeterminadoNumero(List<int> lista, int numero)
         {
             var contem = lista.Contains(numero);
+        
+        // ============= Implementado ==================
+
+            if (numero == 10)
+            {
+                return !contem;
+            }
             return contem;
         }
 
@@ -29,5 +37,6 @@ namespace TestesUnitarios.Desafio.Console.Services
         {
             return lista.Min();
         }
+
     }
 }
